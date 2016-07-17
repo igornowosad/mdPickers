@@ -768,8 +768,8 @@ module.directive("mdpClock", ["$animate", "$timeout", function($animate, $timeou
 }]);
 
 module.provider("$mdpTimePicker", function() {
-    var LABEL_OK = "OK",
-        LABEL_CANCEL = "Cancel";
+    var LABEL_OK = "Wybierz",
+        LABEL_CANCEL = "Anuluj";
         
     this.setOKButtonLabel = function(label) {
         LABEL_OK = label;
