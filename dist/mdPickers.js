@@ -157,7 +157,7 @@ function DatePickerCtrl($scope, $mdDialog, $mdMedia, $timeout, currentDate, opti
 
 module.provider("$mdpDatePicker", function() {
     var LABEL_OK = "OK",
-        LABEL_CANCEL = "Cancel",
+        LABEL_CANCEL = "Anuluj",
         DISPLAY_FORMAT = "ddd, MMM DD";
         
     this.setDisplayFormat = function(format) {
