@@ -788,7 +788,7 @@ module.provider("$mdpTimePicker", function() {
                 controller:  ['$scope', '$mdDialog', 'time', 'autoSwitch', 'ampm', '$mdMedia', TimePickerCtrl],
                 controllerAs: 'timepicker',
                 clickOutsideToClose: true,
-                template: '<md-dialog aria-label="" class="mdp-timepicker" ng-class="{ \'portrait\': !$mdMedia(\'gt-xs\') }">' +
+                template: '<md-dialog md-autofocus aria-label="" class="mdp-timepicker" ng-class="{ \'portrait\': !$mdMedia(\'gt-xs\') }">' +
                             '<md-dialog-content layout-gt-xs="row" layout-wrap>' +
                                 '<md-toolbar layout-gt-xs="column" layout-xs="row" layout-align="center center" flex class="mdp-timepicker-time md-hue-1 md-primary">' +
                                     '<div class="mdp-timepicker-selected-time">' +
@@ -809,7 +809,7 @@ module.provider("$mdpTimePicker", function() {
                                     '<md-dialog-actions layout="row">' +
 	                                	'<span flex></span>' +
                                         '<md-button class="jm-btn__cancel" ng-click="timepicker.cancel()" aria-label="' + LABEL_CANCEL + '">' + LABEL_CANCEL + '</md-button>' +
-                                        '<md-button class="jm-btn__primary" md-autofocus ng-click="timepicker.confirm()" aria-label="' + LABEL_OK + '">' + LABEL_OK + '</md-button>' +
+                                        '<md-button class="jm-btn__primary" ng-click="timepicker.confirm()" aria-label="' + LABEL_OK + '">' + LABEL_OK + '</md-button>' +
                                     '</md-dialog-actions>' +
                                 '</div>' +
                             '</md-dialog-content>' +
